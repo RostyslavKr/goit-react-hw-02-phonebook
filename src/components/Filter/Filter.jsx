@@ -10,7 +10,13 @@ export const Filter = ({ value, onChange }) => (
   <ContainerFilterInput>
     <ContainerFilterInput htmlFor="name">
       <TitleFilter>Find contacts by name</TitleFilter>
-      <FilterInput type="text" name="name" value={value} onChange={onChange} />
+      <FilterInput
+        autoComplete="off"
+        type="text"
+        name="name"
+        value={value}
+        onChange={onChange}
+      />
     </ContainerFilterInput>
   </ContainerFilterInput>
 );
